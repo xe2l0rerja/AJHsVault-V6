@@ -1,0 +1,23 @@
+---
+import { Icon } from 'astro-icon';
+
+const taskbarItems = [
+  { icon: 'lucide:home', label: 'Home', href: '/' },
+  { icon: 'lucide:search', label: 'Search', href: '/search' },
+  { icon: 'lucide:mail', label: 'Mail', href: '/mail' },
+  { icon: 'lucide:user', label: 'Profile', href: '/profile' },
+  { icon: 'lucide:settings', label: 'Settings', href: '/settings' },
+];
+---
+
+<nav class="bg-gradient-to-b from-gray-800 to-gray-900 text-gray-300 p-2 flex justify-around items-center fixed bottom-0 left-0 right-0 z-50 border-t border-gray-700 shadow-lg">
+  {taskbarItems.map((item) => (
+    <a href={item.href} class="flex flex-col items-center group">
+      <div class="bg-gradient-to-b from-gray-700 to-gray-800 p-2 rounded-lg shadow-inner group-hover:from-gray-600 group-hover:to-gray-700 transition-all duration-200">
+        <Icon name={item.icon} class="w-6 h-6 text-gray-300 group-hover:text-white transition-colors duration-200" />
+      </div>
+      <span class="text-xs mt-1 group-hover:text-white transition-colors duration-200">{item.label}</span>
+    </a>
+  ))}
+</nav>
+
