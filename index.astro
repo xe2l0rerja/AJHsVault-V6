@@ -1,0 +1,24 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Button from '../components/Button.astro';
+---
+
+<Layout title="Skeuomorphic Night-Themed Website">
+	<div class="max-w-4xl mx-auto">
+		<h1 class="text-3xl font-bold mb-6 text-center bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text">Welcome to the Skeuomorphic Night-Themed Website</h1>
+		<p class="mb-8 text-center text-gray-400">This is a sample page demonstrating the skeuomorphic dark theme and responsive design optimized for Chromebooks.</p>
+		<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+			<div class="bg-gradient-to-b from-gray-800 to-gray-900 p-6 rounded-lg shadow-lg border border-gray-700">
+				<h2 class="text-xl font-semibold mb-4 text-blue-300">Feature 1</h2>
+				<p class="text-gray-400 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				<Button>Learn More</Button>
+			</div>
+			<div class="bg-gradient-to-b from-gray-800 to-gray-900 p-6 rounded-lg shadow-lg border border-gray-700">
+				<h2 class="text-xl font-semibold mb-4 text-green-300">Feature 2</h2>
+				<p class="text-gray-400 mb-4">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<Button variant="secondary">Explore</Button>
+			</div>
+		</div>
+	</div>
+</Layout>
+
